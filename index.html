@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Secret Vault</title>
+    <style>
+        body {
+            background-color: #111;
+            color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            text-align: center;
+            padding: 2rem;
+        }
+        h1 {
+            font-size: 2.5rem;
+            color: #fff;
+        }
+        .product {
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+        .product img, .product video {
+            max-width: 90%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #000;
+        }
+        .product-description {
+            max-width: 600px;
+            text-align: center;
+            font-size: 1.1rem;
+        }
+        .price {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #4caf50;
+        }
+        form {
+            display: grid;
+            gap: 1rem;
+            max-width: 400px;
+            margin: 2rem auto;
+            background: #222;
+            padding: 2rem;
+            border-radius: 10px;
+        }
+        input, select, textarea {
+            padding: 0.8rem;
+            border: none;
+            border-radius: 5px;
+        }
+        button {
+            background: #4caf50;
+            color: white;
+            padding: 1rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Secret Vault</h1>
+        <p>Сигурност, удобство, достъпност. Безплатна доставка. Преглед и тест при получаване.</p>
+    </header>
+
+    <section class="product">
+        <img src="oak-nightstand.jpg" alt="Нощно шкафче Дъб">
+        <div class="product-description">
+            <h2>Нощно шкафче - Дъб</h2>
+            <p>Скрий ценностите си със стил. Този модел съчетава класически дизайн с вградена тайна секция, достъпна само за теб.</p>
+            <p class="price">Цена: 249 лв</p>
+        </div>
+    </section>
+
+    <section class="product">
+        <img src="white-nightstand.jpg" alt="Нощно шкафче Бяло">
+        <div class="product-description">
+            <h2>Нощно шкафче - Бяло</h2>
+            <p>Модерен вид, елегантна сигурност. Идеално за светъл интериор, без да прави компромис със защитата.</p>
+            <p class="price">Цена: 249 лв</p>
+        </div>
+    </section>
+
+    <section class="product">
+        <video controls>
+            <source src="product-video.mp4" type="video/mp4">
+            Вашият браузър не поддържа видеото.
+        </video>
+    </section>
+
+    <form action="https://formspree.io/f/xnqeykya" method="POST">
+        <input type="text" name="Име и фамилия" placeholder="Име и фамилия" required>
+        <input type="tel" name="Телефон" placeholder="Телефонен номер" required>
+        <input type="email" name="Имейл" placeholder="Имейл" required>
+        <input type="text" name="Град" placeholder="Град" required>
+        <textarea name="Офис" placeholder="Офис на Еконт или Спиди" required></textarea>
+        <button type="submit">Изпрати поръчка</button>
+    </form>
+
+    <footer>
+        <p>&copy; 2025 Secret Vault. Всички права запазени.</p>
+    </footer>
+</body>
+</html>
