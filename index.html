@@ -122,7 +122,76 @@
     </form>
   </section>
 
-  <section class="contact">
+  
+  
+
+
+  <section class="faq">
+    <h2>Често задавани въпроси (FAQ)</h2>
+    <style>
+      .accordion {
+        background-color: rgba(255, 255, 255, 0.05);
+        color: white;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 1em;
+        transition: 0.4s;
+        margin-top: 10px;
+        border-radius: 6px;
+      }
+      .active, .accordion:hover {
+        background-color: #800080;
+      }
+      .panel {
+        padding: 0 18px;
+        background-color: rgba(255, 255, 255, 0.03);
+        display: none;
+        overflow: hidden;
+        border-radius: 0 0 6px 6px;
+      }
+    </style>
+
+    <button class="accordion">Как се отваря тайника?</button>
+    <div class="panel">
+      <p>Всеки от тайниците е скрит и заключен с електронно устройство. Отключването става чрез RFID карта, която се приближава до шкафа и отключва тайника автоматично.</p>
+    </div>
+
+    <button class="accordion">Продуктът пристига ли цял или трябва да се сглобява?</button>
+    <div class="panel">
+      <p>Продуктите ни пристигат напълно сглобени и готови за употреба, за удобство на клиента.</p>
+    </div>
+
+    <button class="accordion">Какво става, ако изгубя картата?</button>
+    <div class="panel">
+      <p>Помислили сме за това — включили сме и резервна карта, която да използвате в подобна ситуация.</p>
+    </div>
+
+    <button class="accordion">Какво се случва, когато батериите на устройството се изхабят?</button>
+    <div class="panel">
+      <p>Когато батериите са със слаб заряд, устройството ще издаде звуков сигнал, който подсказва, че е време за смяна.</p>
+    </div>
+
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      for (var i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+    </script>
+  </section>
+
+<section class="contact">
     <h2>Контакт с нас</h2>
     <p>Имейл: <strong>secretvaultorder@gmail.com</strong></p>
     <p>Телефон за поръчки: <strong>+359893881592</strong></p>
