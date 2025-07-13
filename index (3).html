@@ -1,0 +1,289 @@
+
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(-45deg, #0d0d0d, #1a001a, #330033, #0d0d0d);
+      background-size: 400% 400%;
+      animation: gradientMove 15s ease infinite;
+      color: #f5f5f5;
+    }
+    @keyframes gradientMove {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+    .top-banner-animated h2 {
+      font-size: 2em;
+      color: white;
+      animation-delay: 0.2s;
+    }
+    .top-banner-animated p {
+      font-size: 1.2em;
+      color: #e0e0e0;
+      animation-delay: 0.6s;
+    }
+  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Secret Vault</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #0d0d0d, #1a001a);
+      color: #f5f5f5;
+    }
+    header {
+      background: linear-gradient(90deg, #2b005f, #800080, #ff007f);
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    .video-wrapper {
+      text-align: center;
+      margin: 20px auto;
+      max-width: 720px;
+    }
+    section {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    .product {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+    }
+    .product img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin: 10px 0;
+    }
+    .order-form {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .contact {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      margin-top: 40px;
+      border-radius: 10px;
+      text-align: center;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 6px;
+      border: none;
+      font-size: 1em;
+    }
+    button {
+      background: #800080;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #ff007f;
+    }
+  </style>
+</head>
+<body>
+  <header>
+
+  <div style="text-align: center; padding: 20px;">
+    <img src="secret-vault-logo.png" alt="Secret Vault Logo" style="max-width: 200px; height: auto;">
+  </div>
+
+    <h1 >Secret Vault</h1>
+    <p>Сигурност. Удобство. Достъпност.</p>
+    <a href="#order-form" style="
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 22px;
+      font-size: 1em;
+      color: white;
+      background-color: #5a005a;
+      border: 1px solid #a052a0;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: transform 0.2s ease, background-color 0.3s ease;
+    " onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+      Поръчай сега
+    </a>
+</header>
+
+  <div style="text-align: center; margin-top: 20px;">
+    <p>Следи ни за още клипове в TikTok:</p>
+    <a href="https://www.tiktok.com/@hiddenvault101" target="_blank"
+       style="display: inline-flex; align-items: center; background: linear-gradient(to right, #8e2de2, #ff2dba);
+              color: white; padding: 12px 24px; border-radius: 30px; text-decoration: none; font-weight: bold;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/TikTok_logo.svg" alt="TikTok" style="height: 24px; margin-right: 10px;">
+      @hiddenvault101
+    </a>
+  </div>
+
+  <style>
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .top-banner-animated {
+      background: linear-gradient(90deg, #2b005f, #800080, #ff007f);
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .top-banner-animated h2, .top-banner-animated p {
+      opacity: 0;
+      animation: fadeInUp 1.5s ease-out forwards;
+    }
+    .top-banner-animated h2 {
+      font-size: 2em;
+      color: white;
+      animation-delay: 0.2s;
+    }
+    .top-banner-animated p {
+      font-size: 1.2em;
+      color: #e0e0e0;
+      animation-delay: 0.6s;
+    }
+  </style>
+  <div class="top-banner-animated">
+    <h2 >Скрий ценното. Запази сигурността.</h2>
+    <p>Secret Vault – нощни шкафчета с вграден RFID тайник</p>
+  </div>
+  <section>
+    <div class="product">
+      <h2 >Нощно шкафче - Дъб</h2>
+      <img src="oak-nightstand.jpg" alt="Нощно шкафче Дъб" />
+      <p><em>Стилно и здраво, това нощно шкафче в цвят дъб изглежда като обикновена мебел… докато не откриеш тайната му. Вътрешният скрит отсек е създаден за лични вещи, които трябва да останат точно такива — лични.</em></p>
+      <p><strong>Размери:</strong> Ширина: 41 см • Височина: 48 см • Дълбочина на тайника: 7 см</p>
+      <p><strong>Цена:</strong> 249 лв (с безплатна доставка и опция за тест и преглед)</p>
+    </div>
+    <div class="product">
+      <h2 >Нощно шкафче - Бяло</h2>
+      <img src="white-nightstand.jpg" alt="Нощно шкафче Бяло" />
+      <p><em>Изчистен, модерен вид и дискретност в едно. Белият модел пасва перфектно на светли интериори, а вътрешният тайник е толкова деликатно скрит, че дори поглед отблизо не издава нищо.</em></p>
+      <p><strong>Размери:</strong> Ширина: 41 см • Височина: 48 см • Дълбочина на тайника: 7 см</p>
+      <p><strong>Цена:</strong> 249 лв (с безплатна доставка и опция за тест и преглед)</p>
+    </div>
+  </section>
+  <section class="order-form">
+    <h2 >Поръчай сега</h2>
+    <form id="order-form" action="https://formsubmit.co/secretvaultorder@gmail.com" method="POST">
+      <select name="Избран модел" required>
+        <option value="">-- Избери модел --</option>
+        <option value="Дъб">Нощно шкафче - Дъб</option>
+        <option value="Бяло">Нощно шкафче - Бяло</option>
+      </select>
+      <input type="text" name="Име и фамилия" placeholder="Име и фамилия" required />
+      <input type="tel" name="Телефонен номер" placeholder="Телефонен номер" required />
+      <input type="email" name="Имейл" placeholder="Имейл" required />
+      <input type="text" name="Град" placeholder="Град" required />
+      <textarea name="Офис на Еконт/Спиди" placeholder="Офис на Еконт или Спиди" required></textarea>
+      <button type="submit">Изпрати поръчка</button>
+    </form>
+  </section>
+  <div class="video-wrapper">
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/4byLkzf_XF8"
+      title="SecretVault видео демонстрация" frameborder="0" allowfullscreen></iframe>
+  </div>
+<section class="faq">
+    <h2 >Често задавани въпроси (FAQ)</h2>
+    <style>
+      .accordion {
+        background-color: rgba(255, 255, 255, 0.05);
+        color: white;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 1em;
+        transition: 0.4s;
+        margin-top: 10px;
+        border-radius: 6px;
+      }
+      .active, .accordion:hover {
+        background-color: #800080;
+      }
+      .panel {
+        padding: 0 18px;
+        background-color: rgba(255, 255, 255, 0.03);
+        display: none;
+        overflow: hidden;
+        border-radius: 0 0 6px 6px;
+      }
+    </style>
+    <button class="accordion">Как се отваря тайника?</button>
+    <div class="panel">
+      <p>Всеки от тайниците е скрит и заключен с електронно устройство. Отключването става чрез RFID карта, която се приближава до шкафа и отключва тайника автоматично.</p>
+    </div>
+    <button class="accordion">Продуктът пристига ли цял или трябва да се сглобява?</button>
+    <div class="panel">
+      <p>Продуктите ни пристигат напълно сглобени и готови за употреба, за удобство на клиента.</p>
+    </div>
+    <button class="accordion">Какво става, ако изгубя картата?</button>
+    <div class="panel">
+      <p>Помислили сме за това — включили сме и резервна карта, която да използвате в подобна ситуация.</p>
+    </div>
+    <button class="accordion">Какво се случва, когато батериите на устройството се изхабят?</button>
+    <div class="panel">
+      <p>Когато батериите са със слаб заряд, устройството ще издаде звуков сигнал, който подсказва, че е време за смяна.</p>
+    </div>
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      for (var i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+    </script>
+  </section>
+<section class="contact">
+    <h2 >Контакт с нас</h2>
+    <p>Имейл: <strong>secretvaultorder@gmail.com</strong></p>
+    <p>Телефон за поръчки: <strong>+359893881592</strong></p>
+  
+    
+    <p>Следи ни за още клипове в TikTok:</p>
+    <a href="https://www.tiktok.com/@hiddenvault101" target="_blank"
+       style="display: inline-flex; align-items: center; background: linear-gradient(to right, #8e2de2, #ff2dba);
+              color: white; padding: 12px 24px; border-radius: 30px; text-decoration: none; font-weight: bold; margin-top: 10px;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/TikTok_logo.svg" alt="TikTok" style="height: 24px; margin-right: 10px;">
+      @hiddenvault101
+    </a>
+ 
+      <a href="https://www.tiktok.com/@hiddenvault101" target="_blank" style="color: #ff2dba; text-decoration: underline;">
+        @hiddenvault101
+      
+</section>
+</body>
+</html>
